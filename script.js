@@ -8,8 +8,6 @@ btnSearch.addEventListener('click', () => {
     const query = input.value;
     const url = `http://www.omdbapi.com/?s=${query}&apikey=${apikey}`
 
-    result.innerHTML = '<div class="loading"></div>';
-
     fetch(url)
         .then(res => res.json())
         .then(data => {
