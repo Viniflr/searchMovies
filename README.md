@@ -28,10 +28,6 @@ O usuário digita o nome do filme (em inglês) e o app retorna detalhes como tí
 O projeto está publicado em:  
 [Link](https://viniflr.github.io/searchMovies/)
 
-## Licença
-
-Este projeto está sob a licença MIT.
-
 ---
 
 Criado por:
