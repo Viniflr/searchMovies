@@ -6,14 +6,14 @@ const apikey = '3cbe0b12';
 
 btnSearch.addEventListener('click', () => {
     const query = input.value;
-    const url = `http://www.omdbapi.com/?s=${query}&apikey=${apikey}`
+    const url = `https://www.omdbapi.com/?s=${query}&apikey=${apikey}`;
 
     fetch(url)
         .then(res => res.json())
         .then(data => {
             if (data.Response === "True" && data.Search.length > 0) {
                 const movie = data.Search[0];
-                fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apikey}`)
+                fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apikey}`)
                     .then(res => res.json())
                     .then(details => {
                         result.innerHTML = `
